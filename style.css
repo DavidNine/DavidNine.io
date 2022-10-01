@@ -60,6 +60,11 @@ body {
     letter-spacing: 3px;
     color: #e7e6e6;
 }
+.pagetext p {
+  position: relative;
+  animation: fadein 2s ;
+    animation-timing-function: ease;
+}
 .pageimg{
     display: flex;
     width: 50%;
@@ -71,5 +76,13 @@ body {
     width:100%;
     height: 100%;
     border-radius: 20px;
-    
+
+    animation: fadein 2s ;
+}
+
+@keyframes fadein{
+    from {top: -300px;
+      opacity: .1;}
+    to{top:0px;
+      opacity:1;}
 }
