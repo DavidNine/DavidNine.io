@@ -14,43 +14,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap"
       rel="stylesheet"
     />
-    <title>home</title>
+    <title>Document</title>
   </head>
   <body>
-    <div class="loding" id="loding">
-      <div id="myProgress">
-        <div id="myBar"></div>
-      </div>
-    </div>
-
-    <script>
-      var i = 0;
-      if (i == 0) {
-        i = 1;
-        var elem = document.getElementById("myBar");
-        var width = 1;
-        var id = setInterval(frame, 10);
-        function frame() {
-          if (width >= 100) {
-            clearInterval(id);
-            i = 0;
-          } else {
-            width++;
-            elem.style.width = width + "%";
-            document.getElementById("loding").style.opacity =
-              (100 - width) / 100;
-          }
-        }
-      }
-      document.getElementById("loding").style.zIndex = -1;
-    </script>
     <div class="wrap">
       <div class="wrap-top">
         <div class="logo">
@@ -76,20 +49,37 @@
           </a>
         </div>
         <nav>
-          <a href="#">Home</a>
-          <a href="about.html">About</a>
+          <a href="home.html">Home</a>
+          <a href="#">About</a>
           <a href="#">Works</a>
           <a href="#">Contact me</a>
         </nav>
       </div>
       <div class="wrap-center">
-        <div class="pagetext">
-          <p>我是阿九</p>
-          <p>這裡是我的網站</p>
-          <p>你可以在這簡單的了解我</p>
+        <div class="Pagetext">
+          <h1>簡介</h1>
+          <p>
+            你好，我是阿九<br />
+            是元智大學資工系的學生<br />
+            平時喜歡在家和朋友線上打遊戲<br />
+            也喜歡騎車去看風景
+          </p>
         </div>
-        <div class="pageimg">
+        <div class="Pageimg">
           <img src="PIC/Selfpic.jpg" alt="none" />
+        </div>
+      </div>
+      <div class="wrap-center">
+        <div class="Pageimg">
+          <img src="PIC/Selfpic.jpg" alt="none" />
+        </div>
+        <div class="Pagetext">
+          <h1>學習經歷</h1>
+          <p>
+            畢業於台南二中<br />
+            大學一年級就讀於東海大學<br />
+            大二轉學至元智大學就讀<br />
+          </p>
         </div>
       </div>
       <div class="warp-bottom"></div>

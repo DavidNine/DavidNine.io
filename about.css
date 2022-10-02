@@ -71,36 +71,25 @@ body {
 
 .wrap-center {
     display:flex;
-    width: 100%;
+    margin:10vh 10vw ;
+   
 }
-.pagetext{
-    width: 100%;
-    padding-top: 10%;
-    padding-left: 20%;
-    display: inline-block;
+.Pagetext{
     text-align: left;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 36px ;
-    letter-spacing: 3px;
+    letter-spacing: .9px;
     color: #e7e6e6;
 }
-.pagetext p {
-  position: relative;
-  animation: fadein 3s ;
-    animation-timing-function: ease;
-}
-.pageimg{
+
+.Pageimg{
     display: flex;
     width: 50%;
-    padding:10%;
+    margin-left: 5vw;
 }
-.pageimg img {
-    position: relative;
-    right: 50%;
-    width:150%;
-    height: 100%;
+.Pageimg img {
     border-radius: 20px;
-    animation: fadein 3s ;
+    width: 35vw;
 }
 
 @keyframes fadein{
