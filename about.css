@@ -1,11 +1,9 @@
-
 body {
   margin: 0%;
   padding: 0%;
   background-color: #424242;
 
 }
-
 
 .wrap-top {
   display: flex;
@@ -51,6 +49,8 @@ body {
     display:flex;
     margin:10vh 10vw ;
     padding-left: 5vw;
+    animation-name: fadein;
+    animation-duration: 2s;
 }
 .Pagetext{
     text-align: left;
@@ -69,10 +69,11 @@ body {
 .Pageimg img {
     border-radius: 20px;
     width: 35vw;
+    
 }
 
 @keyframes fadein{
-    from {top: -200px;
+    from {top: -10%;
       opacity: .1;}
     to{top:0px;
       opacity:1;}
