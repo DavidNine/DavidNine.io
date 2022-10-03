@@ -3,7 +3,7 @@ body {
   margin: 0%;
   padding: 0%;
   background-color: #424242;
-
+  box-sizing: content-box;
 }
 
 .wrap-top {
