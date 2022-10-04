@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="slideshow.css" />
+    <link rel="stylesheet" href="SearchMenu.css" />
+    <link rel="stylesheet" href="AnimationalIcon.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,52 +57,78 @@
       </nav>
     </div>
     <!--SlideShow container-->
-    <div
-      class="intro"
-      style="
-        font-size: 24px;
-        color: white;
-        font-family: Verdana, sans-serif;
-        width: 100%;
-        text-align: center;
-        margin: 18px 0;
-      "
-    >
-      <span>Practice:slideshow</span>
-    </div>
-    <div class="slideshow-container">
-      <!-- Full width images with number and caption text -->
+    <div class="wrap-center">
+      <div class="Bar-container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="SearchMenu" id="SearchMenu">
+        <ul>
+          <li><a href="#">slideshow</a></li>
+          <li><a href="#">slideshow</a></li>
+          <li><a href="#">slideshow</a></li>
+          <li><a href="#">slideshow</a></li>
+          <li><a href="#">slideshow</a></li>
+          <li><a href="#">slideshow</a></li>
+        </ul>
+      </div>
+      <div class="intro">
+        <span>Practice:slideshow</span>
+      </div>
+      <div class="slideshow-container">
+        <!-- Full width images with number and caption text -->
 
-      <div class="mySlides fade">
-        <div class="numbertext">1/3</div>
-        <img src="PIC/Img1.jpg" alt="" style="width: 100%" />
-        <div class="cpationtext">caption text</div>
+        <div class="mySlides fade">
+          <div class="numbertext">1/3</div>
+          <img src="PIC/Img1.jpg" alt="" style="width: 100%" />
+          <div class="cpationtext">caption text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2/3</div>
+          <img src="PIC/Img2.jpg" alt="" style="width: 100%" />
+          <div class="cpationtext">caption two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3/3</div>
+          <img src="PIC/Img3.jpg" alt="" style="width: 100%" />
+          <div class="cpationtext">caption three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlide(-1)"><</a>
+        <a class="next" onclick="plusSlide(1)">></a>
       </div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">2/3</div>
-        <img src="PIC/Img2.jpg" alt="" style="width: 100%" />
-        <div class="cpationtext">caption two</div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3/3</div>
-        <img src="PIC/Img3.jpg" alt="" style="width: 100%" />
-        <div class="cpationtext">caption three</div>
-      </div>
-
-      <a class="prev" onclick="plusSlide(-1)"><</a>
-      <a class="next" onclick="plusSlide(1)">></a>
-    </div>
-
-    <br />
-    <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
   </body>
+
   <script>
+    /*script for animation bar icon*/
+    var hide = 1;
+
+    function myFunction(x) {
+      x.classList.toggle("change");
+      if (hide === 1) {
+        hide = 1 - hide;
+        document.getElementById("SearchMenu").style.marginLeft = "15vw";
+        x.style.marginLeft = "10vw";
+      } else {
+        document.getElementById("SearchMenu").style.marginLeft = "0vw";
+        x.style.marginLeft = "0vh";
+        hide = 1 - hide;
+      }
+    }
+
+    /*===================================================================*/
+    /*script for slideshow*/
     let slideIndex = 1;
     showSlides(slideIndex);
 
