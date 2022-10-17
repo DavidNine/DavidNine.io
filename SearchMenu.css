@@ -1,6 +1,6 @@
 .intro{
     font-size: 24px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: Verdana, sans-serif;
     width: 100%;
     text-align: center;
@@ -11,7 +11,6 @@
 .SearchMenu{
     width: 15vw;
     height: 100vh;
-    background-color:rgb(30, 30, 30);
     display: inline-block;
     position:absolute;
     left: -15vw;
@@ -33,7 +32,7 @@
     font-size: 24px;    
     padding: 24px 12px;
     text-decoration: none ;
-    color: #a6a6a6;
+    color: #000000;
     display: block;
     transition: .2s;
 }

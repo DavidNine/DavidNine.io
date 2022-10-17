@@ -2,10 +2,96 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-color: #424242;
   box-sizing: content-box;
 }
 
+
+.wrapper{
+  width: 50%;
+  height: 100% ;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  animation: fadein 6s;
+}
+.wrapper.two{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+.wave {
+  background :linear-gradient(45deg, rgb(255, 170, 170), rgb(162, 154, 251));;
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+  opacity: .4;
+  position: absolute;
+  top:0%;
+  left: 0%;
+  margin-left: -20vw;
+  
+  transform-origin: center;
+  animation: drift 7s infinite linear;
+}
+
+
+.waveLeft {
+  background:linear-gradient(30deg, rgb(196, 135, 125), rgb(196, 193, 235));;
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+  opacity: .4;
+  position: absolute;
+  bottom:0%;
+  right: 0%;
+  margin-right:-20vw;
+  margin-bottom:-50vh; ;
+  
+  transform-origin: center;
+  animation: drift 7s infinite linear;
+}
+
+.wave.two {
+  animation: drift 10s infinite linear;
+}
+.waveLeft.two {
+  animation: drift 10s infinite linear;
+}
+
+
+.wave.three {
+  animation: drift 13s infinite linear;
+  opacity: 0.1;
+}
+.waveLeft.three {
+  animation: drift 13s infinite linear;
+  opacity: 0.1;
+}
+
+
+@keyframes drift {
+  0%{
+    transform: rotate(0deg);
+  }100%{
+
+    transform: rotate(360deg);
+  }
+}
+
+.line {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  justify-content: center;
+  width: 90%;
+  height: 1px;
+  left: 5%;
+  border-radius: 10px;
+  animation: LineFadein ;
+  animation-duration: 1.5s;
+}
 
 .wrap-center {
     display:flex;
@@ -20,30 +106,41 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 36px ;
     letter-spacing: 3px;
-    color: #e7e6e6;
+    color: #000000;
 }
 .pagetext p {
   position: relative;
-  animation: fadein 1s ;
-    animation-timing-function: ease;
-}
-.pageimg{
-    display: flex;
-    width: 50%;
-    padding:10%;
-}
-.pageimg img {
-    position: relative;
-    right: 50%;
-    width:150%;
-    height: 100%;
-    border-radius: 20px;
-    animation: fadein 1s ;
+  animation: fadein 3s ;
+  animation-timing-function: ease;
 }
 
+
 @keyframes fadein{
-    from {top: -200px;
-      opacity: .1;}
-    to{top:0px;
-      opacity:1;}
+  0%{opacity: 0%;
+    top: -200px;}
+  25%{}
+  50%{opacity: 0%}
+  100%{
+      top: 0%;
+      opacity: 1;
+    }
+}
+@keyframes fadein_wave{
+  0%{opacity: 0%;}
+  50%{opacity: 0%}
+  100%{
+      opacity: 1;
+    }
+}
+
+@keyframes LineFadein{
+  from {
+    width: 1%;
+    left: 50%
+  }
+  to {
+    width: 90%;
+    left: 5%;
+  }
+  
 }

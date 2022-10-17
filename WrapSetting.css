@@ -1,36 +1,38 @@
 .wrap-top {
     display: flex;
-    background-color: rgb(30, 30, 30);
 }
 
 .wrap-top nav {
     
+    z-index: 1;
     width: 100%;
     text-align: right;
     margin-right: 12vh;
 }
 .wrap-top nav a {
     display: inline-block;
-    color:#a6a6a6;
+    color:#000000;
     font-size: 18px;
     font-family:Verdana , sans-serif;
     text-decoration: none;
     padding: 4vh 2vw;
+    transition: .3s;
 }
 
 .wrap-top nav a:hover{
-    background-color: rgba(84, 84, 84, 0.412);
+    font-size: 22px;
 }
 
 .logo {
+    z-index: 1;
     display: flex;
     width: 100%
 }
 
 .logo a{
-    color: #a6a6a6;
+    color: #000000;
     font-size: 36px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    padding: 2vh 0vw 2vh 5vw;
+    padding: 2vh 0vw 2vh 10vw;
 }
