@@ -17,10 +17,12 @@
     text-decoration: none;
     padding: 4vh 2vw;
     transition: .3s;
+    box-sizing: border-box;
 }
 
 .wrap-top nav a:hover{
     font-size: 22px;
+    padding: 4vh 1vw;
 }
 
 .logo {
@@ -35,4 +37,26 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     padding: 2vh 0vw 2vh 10vw;
+}
+
+@media screen and (max-width:1000px){
+    .wrap-top{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .wrap-top nav {
+        text-align: center;
+    }
+    .wrap-top nav a {
+        font-size: 16px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 1vh 0;
+    }
+    .logo a {
+        font-size: 52px;
+        padding: 0%;
+    }
 }
