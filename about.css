@@ -58,7 +58,7 @@ body {
 
 .Pagetext h1 {
   font-size: 36px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   font-weight: 500;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 .Pagetext ul li {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   font-size: 28px;
   font-weight: 300;
   letter-spacing: 3px;
@@ -95,10 +95,10 @@ body {
   margin-top: 10vh;
   margin-left: 15%;
   
-  font-family: sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   font-size: 28px;
   line-height: 8vh;
-  letter-spacing: 1vw;
+  letter-spacing: .5vw;
   text-align: left;
   animation: loading 2s;
 }
