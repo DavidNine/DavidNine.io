@@ -1,13 +1,6 @@
-.ContactMe{
-    width: 100%;
-    color:rgb(0, 0, 0);
-
-    font-size: 88px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    
-    text-align: center;
-    padding-bottom: 2vh;
+#typeword {
+  font-family: 'Noto sans TC' , sans-serif;
+  font-size: 40px;
 }
 .wraper_mail{
     text-align: center;
@@ -122,4 +115,13 @@
   .FacebookIcon:hover{
     background-color: rgb(35, 35, 165);
     color: white;
+  }
+  .bottomwrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .Copyrighttextwrap{
+    font-size: 16px;
+    font-family: 'Noto sans TC' , sans-serif;
   }
