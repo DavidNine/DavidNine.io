@@ -10,7 +10,6 @@
     padding-bottom: 2vh;
 }
 .wraper_mail{
-    width: 100%;
     text-align: center;
     vertical-align: top;
 }
@@ -21,14 +20,6 @@
     font-size: 44px;
     margin-right: 1vw;
     
-}
-
-.mailAccount{
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    font-size: 32px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: .4vw;
 }
 
 
@@ -56,13 +47,79 @@
       left: 5%;
     }
   }
+
+
+
+
+  .ContactInfoWrap{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Contacttext{
+    display:flex;
+    justify-content: center;
+  }
+
+  .Contacttext p{
+    font-size: 48px;
+  }
+  .IconWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .material-symbols-outlined.mail{
     transition: .6s;
     border-radius: 50%;
+    padding: 20px;
+    font-size: 48px;
+  }
+  
+  .material-symbols-outlined.mail a{
+    text-decoration: none;
+    color: black;
   }
 
   .material-symbols-outlined.mail:hover{
-    padding: 10px;
-    background-color: rgba(81, 81, 81, 0.43);
-    color: rgba(18, 6, 54, 0.742);
+    background-color: rgba(99, 65, 255, 0.43);
+    color: rgba(41, 6, 145, 0.742);
+  }
+
+  .InstagramIcon {
+    width: 50px;
+    padding: 20px;
+    font-size: 48px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .6s;
+    margin-right: 1vw;
+
+    text-decoration: none;
+    color: black;
+
+  }
+  
+  
+  .InstagramIcon:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(250, 175, 175);
+  }
+  
+  
+  .FacebookIcon{
+    width: 50px;
+    font-size: 48px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 20px;
+    transition: .6s;
+    text-decoration: none;
+    color: black;
+  }
+  .FacebookIcon:hover{
+    background-color: rgb(35, 35, 165);
+    color: white;
   }
